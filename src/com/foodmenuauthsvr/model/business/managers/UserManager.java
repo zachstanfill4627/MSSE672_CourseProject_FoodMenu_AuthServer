@@ -51,6 +51,11 @@ public class UserManager {
 		this.user = user;
 	}
 	
+	public void setUser(User user) {
+		LOGGER.trace("setUser Method Called");
+		this.user = user;
+	}
+	
 	/** 
 	 * Use Case : Users-400
 	 * Add New User
@@ -155,6 +160,51 @@ public class UserManager {
 			return false;
 		}
 	}
+	
+	/**
+	 * Use Case : Users-421
+	 * Retrieve User SessionKey
+	 */
+	public String retrieveUserSessionKey(String email) throws 
+		ServiceLoadException, UserServiceException {
+		LOGGER.trace("retrieveUserSessionKey Called");
+		
+		ServiceFactory serviceFactory = new ServiceFactory();
+		IUserService userSvc = (IUserService)serviceFactory.getService("IUserService");
+		
+		String sessionKey = "";
+		
+		LOGGER.trace("retrieveUserSessionKey -- Retrieving SessionKey");
+		sessionKey = userSvc.retrieveUserSessionKey(email);
+		
+		if(sessionKey.equals("")) {
+			LOGGER.trace("retrieveUserSessionKey -- SessionKey is null");
+			return null;
+		} else {
+			return sessionKey;
+		}
+	}
+	
+	/**
+	 * Use Case : Users-422
+	 * Retrieve User SessionKey
+	 */
+	public boolean closeUserSession(String email) throws 
+		ServiceLoadException, UserServiceException {
+		LOGGER.trace("closeUserSession Called");
+		
+		ServiceFactory serviceFactory = new ServiceFactory();
+		IUserService userSvc = (IUserService)serviceFactory.getService("IUserService");
+		
+		LOGGER.trace("closeUserSession -- Closing Session");
+		if (userSvc.closeUserSession(email)) {
+			LOGGER.trace("closeUserSession -- User Session Closed");
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
 	
 	/**
 	 * Use Case : Users-430

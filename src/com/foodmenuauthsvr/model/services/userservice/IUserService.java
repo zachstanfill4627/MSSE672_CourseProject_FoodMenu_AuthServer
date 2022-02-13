@@ -19,4 +19,6 @@ public interface IUserService extends IService {
 	public boolean resetUserPasswordData(String email, int age, String recPhrase) throws UserServiceException;
 	public boolean deleteUserData(User user) throws UserServiceException;
 	public boolean authenticateUserData(String email, String password) throws UserServiceException;
+	public String retrieveUserSessionKey(String email) throws UserServiceException;
+	public boolean closeUserSession(String email) throws UserServiceException;
 }

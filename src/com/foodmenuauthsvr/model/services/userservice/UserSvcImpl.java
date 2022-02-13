@@ -2,6 +2,7 @@ package com.foodmenuauthsvr.model.services.userservice;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.security.SecureRandom;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -10,6 +11,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Properties;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 
 import com.foodmenu.model.domain.User;
@@ -590,7 +592,22 @@ public class UserSvcImpl implements IUserService {
             	/** Verify Userdata in database matches User Object */
             	if(!rs.getString("infotext").equals(password)) { 
             		return false; 
-            	};
+            	} else {
+            		//char[] possibleCharacters = (new String("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~`!@#$%^&*()-_=+[{]}\\|;:\'\",<.>/?")).toCharArray();
+            		char[] possibleCharacters = (new String("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")).toCharArray();
+    				String generatedString = RandomStringUtils.random( 256, 0, possibleCharacters.length-1, false, false, possibleCharacters, new SecureRandom() );
+    				String sql1 = String.format("INSERT INTO sessions (userid, sessionkey) "
+    						+ "VALUES (%s, \"%s\");",
+    						"(SELECT userid FROM users WHERE email = \"" + email + "\")",
+    						generatedString);
+    				
+    				LOGGER.debug("authenticateUserData -- SQL Session Inject Statements:");
+    				LOGGER.debug(sql1);
+    				
+    				/** Execute SQL Update Statements - Batch Style */
+    				stmt.addBatch(sql1);
+    	            stmt.executeBatch();
+            	}
             } else { 
             	return false;
             }
@@ -609,6 +626,105 @@ public class UserSvcImpl implements IUserService {
 		LOGGER.trace(String.format("User %s Successfully Authenticated", email));
 		return true;
 	}
-
-
+	
+	public String retrieveUserSessionKey(String email) throws UserServiceException {
+		LOGGER.trace("retrieveUserSessionKey Called");
+		
+		String sessionKey = "";
+		
+		/** Re-usable String Buffer for SQL Statement instantiation */ 
+		StringBuffer strBfr = new StringBuffer();
+		
+		/** SQL Statement 1, Select Record from Users Table */
+		strBfr.append(String.format("SELECT sessionkey FROM sessions "
+				+ "INNER JOIN users ON users.userid = sessions.userid "
+				+ "WHERE email = \"%s\";", email));
+		String query = strBfr.toString();
+		strBfr.setLength(0);
+		
+		LOGGER.debug("retrieveUserSessionKey -- SQL Statements:");
+		LOGGER.debug(query);
+		
+		try (Connection conn = DriverManager.getConnection(connString, dbUsername, dbPassword);
+                Statement stmt = conn.createStatement()) {          
+			LOGGER.trace("Database Connection Opened");
+            
+            /** Run SQL Query against Users Table */
+            ResultSet rs = stmt.executeQuery(query);
+            
+            if(rs.next()) {            	
+	            /** Assign Query Return to variables */
+	            sessionKey = rs.getString("sessionkey");
+            } else {
+            	return null;
+            }
+                        
+    		/** Close Database Connection */
+            conn.close();
+            LOGGER.trace("Database Connection Closed");
+        } catch (SQLException e) {
+        	/** Error Output */
+        	System.err.println(e.getMessage());
+        	LOGGER.trace(e.getMessage());
+        	return null;
+        }
+		
+		LOGGER.info(String.format("User SessionKey %s successfully retrieved from database", email));
+		return sessionKey;
+	}
+	
+	public boolean closeUserSession(String email) {
+		LOGGER.trace("retrieveUserSessionKey Called");
+		
+		/** Re-usable String Buffer for SQL Statement instantiation */ 
+		StringBuffer strBfr = new StringBuffer();
+		
+		/** SQL Statement 1, Delete User data in Users Table */
+		strBfr.append(String.format("DELETE FROM sessions WHERE userid = "
+				+ "(SELECT userid FROM users WHERE email = \"%s\");", email));
+		String sql1 = strBfr.toString();
+		strBfr.setLength(0);
+		
+		/** SQL Statement 1, Select Record from Users Table */
+		strBfr.append(String.format("SELECT sessionid FROM sessions "
+				+ "INNER JOIN users ON users.userid = sessions.userid "
+				+ "WHERE email = \"%s\";", email));
+		String query = strBfr.toString();
+		strBfr.setLength(0);
+		
+		LOGGER.debug("closeUserSession -- SQL Statements:");
+		LOGGER.debug(sql1);
+		LOGGER.debug(query);
+		
+		try (Connection conn = DriverManager.getConnection(connString, dbUsername, dbPassword);
+                Statement stmt = conn.createStatement()) {          
+			LOGGER.trace("Database Connection Opened");
+			conn.setAutoCommit(false);
+            
+			/** Execute SQL Statements - Batch Style */
+			stmt.addBatch(sql1);
+            stmt.executeBatch();
+            
+            /** Commit Changes */ 
+            conn.commit();
+            LOGGER.trace("SQL Statements Commited");
+            
+            /** Run SQL Query against Users Table */
+            ResultSet rs = stmt.executeQuery(query);
+            
+            if(rs.next()) { return false; };
+            LOGGER.trace("User Session Delete Verified");
+            
+            /** Close Database Connection */
+            conn.close();
+            LOGGER.trace("Database Connection Closed");
+            
+            return true; 
+		} catch (SQLException e) {
+        	/** Error Output */
+        	System.err.println(e.getMessage());
+        	LOGGER.trace(e.getMessage());
+        	return false;
+        }
+	}
 }

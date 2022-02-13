@@ -1,0 +1,322 @@
+2022-02-12 18:02:34,399 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 18:02:34,403 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 20:54:21,089 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 20:54:21,094 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 20:54:27,087 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 20:55:34,844 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 20:55:34,865 [Thread-1] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 20:55:34,865 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey Called
+2022-02-12 20:55:34,889 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 20:55:34,891 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 20:55:34,891 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 20:55:34,891 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 20:55:34,892 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 20:55:34,892 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey -- Retrieving SessionKey
+2022-02-12 20:55:34,892 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 20:55:34,892 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-12 20:55:34,893 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 20:55:35,282 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 20:55:35,299 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 20:55:35,299 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 20:58:35,547 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 20:58:35,557 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 20:58:52,445 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 20:58:52,485 [Thread-0] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 20:58:52,485 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey Called
+2022-02-12 20:58:52,511 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 20:58:52,513 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 20:58:52,513 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 20:58:52,513 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 20:58:52,513 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 20:58:52,514 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey -- Retrieving SessionKey
+2022-02-12 20:58:52,514 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 20:58:52,514 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-12 20:58:52,514 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 20:58:52,895 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 20:58:52,912 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 20:58:52,912 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 20:58:52,912 [Thread-0] TRACE com.foodmenuauthsvr.model.services.authenticationservices.UserServer - SessionKey Valid for zstanfill@regis.edu
+
+2022-02-12 20:59:33,335 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 20:59:33,340 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 20:59:39,638 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 20:59:39,680 [Thread-0] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 20:59:39,681 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey Called
+2022-02-12 20:59:39,704 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 20:59:39,706 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 20:59:39,706 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 20:59:39,706 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 20:59:39,707 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 20:59:39,707 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey -- Retrieving SessionKey
+2022-02-12 20:59:39,707 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 20:59:39,708 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-12 20:59:39,708 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 20:59:40,091 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 20:59:40,108 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 20:59:40,108 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 20:59:40,109 [Thread-0] TRACE com.foodmenuauthsvr.model.services.authenticationservices.UserServer - SessionKey Valid for zstanfill@regis.edu
+
+2022-02-12 21:00:05,953 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:00:05,958 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:00:12,358 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 21:00:12,399 [Thread-0] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:12,400 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey Called
+2022-02-12 21:00:12,424 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 21:00:12,425 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 21:00:12,426 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 21:00:12,426 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 21:00:12,426 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 21:00:12,426 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey -- Retrieving SessionKey
+2022-02-12 21:00:12,427 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 21:00:12,427 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-12 21:00:12,427 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 21:00:12,812 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 21:00:12,831 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 21:00:12,831 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:00:12,831 [Thread-0] TRACE com.foodmenuauthsvr.model.services.authenticationservices.UserServer - SessionKey Valid for zstanfill@regis.edu
+
+2022-02-12 21:00:12,832 [Thread-0] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:12,832 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUser Called
+2022-02-12 21:00:12,833 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 21:00:12,835 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 21:00:12,835 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 21:00:12,835 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 21:00:12,835 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 21:00:12,836 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserData Called
+2022-02-12 21:00:12,836 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserData -- SQL Statements:
+2022-02-12 21:00:12,836 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT userid, firstname, lastname, email, recoveryphrase, age, rolename, infotext FROM ((users INNER JOIN info ON users.infoid = info.infoid) INNER JOIN roles ON users.role = roles.roleid) WHERE email = "zstanfill@regis.edu";
+2022-02-12 21:00:12,853 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 21:00:12,856 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 21:00:12,857 [Thread-0] TRACE com.foodmenu.model.domain.User - User Overloaded Constructor (with Password) Called
+2022-02-12 21:00:12,857 [Thread-0] DEBUG com.foodmenu.model.domain.User - User Object Instantiated -- FirstName:zach   LastName:stanfill   Email:zstanfill@regis.edu   RecoveryPhrase:ghostbuster   Age:29   Role:admin
+2022-02-12 21:00:12,857 [Thread-0] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:12,857 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:00:12,858 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - setUser Method Called
+2022-02-12 21:00:12,858 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - deleteUser Called
+2022-02-12 21:00:12,858 [Thread-0] TRACE com.foodmenu.model.domain.User - getRole Method Called
+2022-02-12 21:00:12,859 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 21:00:12,861 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 21:00:12,861 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 21:00:12,861 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 21:00:12,861 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 21:00:12,862 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - deleteUserData Called
+2022-02-12 21:00:12,862 [Thread-0] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:12,862 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - udpateUserPasswordData -- SQL Statements:
+2022-02-12 21:00:12,862 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM users WHERE email = "zstanfill2@regis.edu";
+2022-02-12 21:00:12,863 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM info WHERE infoid NOT IN (SELECT DISTINCT infoid FROM users);
+2022-02-12 21:00:12,863 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM salt WHERE saltid NOT IN (SELECT DISTINCT saltid FROM users);
+2022-02-12 21:00:12,863 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT * FROM users WHERE email = "zstanfill2@regis.edu";
+2022-02-12 21:00:12,879 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 21:00:12,890 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SQL Statements Commited
+2022-02-12 21:00:12,891 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User Delete Verified
+2022-02-12 21:00:12,892 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 21:00:12,892 [Thread-0] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:12,892 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill2@regis.edu successfully deleted from  database
+2022-02-12 21:00:43,939 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 21:00:43,961 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - addNewUser Called
+2022-02-12 21:00:43,962 [Thread-1] TRACE com.foodmenu.model.domain.User - getPassword Method Called
+2022-02-12 21:00:43,965 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 21:00:43,966 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 21:00:43,966 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 21:00:43,966 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 21:00:43,967 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 21:00:43,967 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - AddNewUser -- Checking Validity of Password
+2022-02-12 21:00:43,967 [Thread-1] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:43,967 [Thread-1] INFO  com.foodmenuauthsvr.model.business.managers.UserManager - AddNewUser -- Validating User zstanfill2@regis.edu password
+2022-02-12 21:00:43,968 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - isValidPassword Called
+2022-02-12 21:00:43,968 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - readProperties Called
+2022-02-12 21:00:43,969 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - readProperties -- Properties read successfully
+2022-02-12 21:00:43,969 [Thread-1] INFO  com.foodmenuauthsvr.model.business.managers.UserManager - Password Policy set from properties file: MinLength:1   MaxLength:30   charClasses:4   minCharClass:0
+2022-02-12 21:00:43,970 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - AddNewUser -- Password Validated
+2022-02-12 21:00:43,970 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - AddNewUser -- Continuing New User Password Set
+2022-02-12 21:00:43,970 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - generateSaltKey Called
+2022-02-12 21:00:43,972 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - hashPassword Called
+2022-02-12 21:00:44,023 [Thread-1] TRACE com.foodmenu.model.domain.User - setPassword Method Called
+2022-02-12 21:00:44,024 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - AddNewUser -- Password Successfully Set for User Object
+2022-02-12 21:00:44,024 [Thread-1] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - AddNewUser -- Creating New User in Authentication Database
+2022-02-12 21:00:44,024 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - createUserData Called
+2022-02-12 21:00:44,024 [Thread-1] TRACE com.foodmenu.model.domain.User - getFirstName Method Called
+2022-02-12 21:00:44,024 [Thread-1] TRACE com.foodmenu.model.domain.User - getLastName Method Called
+2022-02-12 21:00:44,025 [Thread-1] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:44,025 [Thread-1] TRACE com.foodmenu.model.domain.User - getRecoveryPhrase Method Called
+2022-02-12 21:00:44,025 [Thread-1] TRACE com.foodmenu.model.domain.User - getAge Method Called
+2022-02-12 21:00:44,025 [Thread-1] TRACE com.foodmenu.model.domain.User - getRole Method Called
+2022-02-12 21:00:44,026 [Thread-1] TRACE com.foodmenu.model.domain.User - getPassword Method Called
+2022-02-12 21:00:44,026 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - createUserData -- SQL Statements:
+2022-02-12 21:00:44,026 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - INSERT INTO info (infotext) VALUES ("87e5fa27c193897cb97f3c3078dc18ba93e5b024f9d2ac469804dffb35d6b748a7fceebd9b392bd154b8746f5d89db45678f04d978d70148aafc8df07bebbf28");
+2022-02-12 21:00:44,026 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - INSERT INTO salt (salttext) VALUES ("gkcMISfYv4tJxEGfKcKUzGAypKFTH9Cn");
+2022-02-12 21:00:44,027 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - INSERT INTO users (firstname, lastname, email, recoveryphrase, age, role, infoid, saltid) VALUES ("Zachary", "Stanfill","zstanfill2@regis.edu", "firefighter", 29, (SELECT roleid FROM roles WHERE rolename = "admin"), (SELECT MAX(infoid) FROM info LIMIT 1), (SELECT MAX(saltid) FROM salt LIMIT 1));
+2022-02-12 21:00:44,027 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT userid, firstname, lastname, email, recoveryphrase, age, rolename, infotext, salttext FROM users INNER JOIN info ON users.infoid = info.infoid INNER JOIN salt ON users.saltid = salt.saltid INNER JOIN roles ON users.role = roles.roleid WHERE email = "zstanfill2@regis.edu";
+2022-02-12 21:00:44,043 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 21:00:44,043 [Thread-1] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:44,044 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - createUserData -- Added user zstanfill2@regis.edu to database
+2022-02-12 21:00:44,052 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SQL Statements Executed
+2022-02-12 21:00:44,054 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SQL Statements Commited
+2022-02-12 21:00:44,055 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - createUserData -- Begin Verifying User was added correctly
+2022-02-12 21:00:44,056 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - createUserData -- Successfully Verified User was added correctlly
+2022-02-12 21:00:44,057 [Thread-1] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 21:00:44,057 [Thread-1] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:44,057 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill2@regis.edu successfully added to the database
+2022-02-12 21:00:44,057 [Thread-1] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 21:00:44,058 [Thread-1] INFO  com.foodmenuauthsvr.model.business.managers.UserManager - AddNewUser -- New User zstanfill2@regis.edu added to Authentication Database
+2022-02-12 21:01:18,290 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:01:18,294 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:02:41,960 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:02:41,965 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:06:42,037 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:06:42,042 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:06:47,097 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:06:47,120 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:07:19,538 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:07:19,557 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:07:59,233 [Thread-2] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:07:59,251 [Thread-2] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:08:36,994 [Thread-3] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:08:37,012 [Thread-3] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:11:35,118 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:11:35,123 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:11:41,193 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:14:58,113 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:14:58,118 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:15:26,269 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:15:26,291 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill2@regis.edu successfully retrieved from database
+2022-02-12 21:16:53,451 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:16:53,455 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:16:58,205 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:16:58,227 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill2@regis.edu successfully retrieved from database
+2022-02-12 21:17:24,994 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:17:24,998 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:17:27,520 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:17:27,544 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill2@regis.edu successfully retrieved from database
+2022-02-12 21:27:02,660 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:27:02,665 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:27:05,985 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:27:06,008 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:27:28,525 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:27:28,544 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:33:16,883 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:33:16,887 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:33:20,827 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 21:47:38,691 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:47:38,696 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:49:21,689 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:49:21,693 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:49:34,986 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 21:49:35,026 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession Called
+2022-02-12 21:49:35,051 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 21:49:35,052 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 21:49:35,053 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 21:49:35,053 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 21:49:35,053 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 21:49:35,053 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession -- Closing Session
+2022-02-12 21:49:35,054 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 21:49:35,054 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
+2022-02-12 21:49:35,054 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions WHERE sessionid = "(SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "%s")";
+2022-02-12 21:49:35,055 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 21:49:35,436 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 21:49:35,454 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '")"' at line 1
+2022-02-12 21:51:15,546 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:51:15,550 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:51:18,288 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 21:51:18,328 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession Called
+2022-02-12 21:51:18,353 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 21:51:18,354 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 21:51:18,354 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 21:51:18,354 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 21:51:18,354 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 21:51:18,355 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession -- Closing Session
+2022-02-12 21:51:18,355 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 21:51:18,355 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
+2022-02-12 21:51:18,356 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions WHERE sessionid = (SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu");
+2022-02-12 21:51:18,356 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 21:51:18,742 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 21:51:18,759 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - You can't specify target table 'sessions' for update in FROM clause
+2022-02-12 21:53:36,950 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:53:36,955 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:53:40,268 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 21:53:40,308 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession Called
+2022-02-12 21:53:40,332 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 21:53:40,334 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 21:53:40,334 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 21:53:40,334 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 21:53:40,334 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 21:53:40,335 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession -- Closing Session
+2022-02-12 21:53:40,335 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 21:53:40,335 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
+2022-02-12 21:53:40,336 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu")
+2022-02-12 21:53:40,336 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 21:53:40,727 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 21:53:40,743 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regi' at line 1
+2022-02-12 21:54:13,124 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 21:54:13,128 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 21:54:16,316 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 21:54:16,357 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession Called
+2022-02-12 21:54:16,381 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 21:54:16,382 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 21:54:16,383 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 21:54:16,383 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 21:54:16,383 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 21:54:16,384 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession -- Closing Session
+2022-02-12 21:54:16,384 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 21:54:16,384 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
+2022-02-12 21:54:16,384 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 21:54:16,385 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 21:54:16,770 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 21:54:16,786 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regi' at line 1
+2022-02-12 22:05:35,852 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 22:05:35,856 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 22:05:44,257 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 22:05:44,297 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession Called
+2022-02-12 22:05:44,322 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 22:05:44,323 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 22:05:44,323 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 22:05:44,324 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 22:05:44,324 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 22:05:44,324 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession -- Closing Session
+2022-02-12 22:05:44,325 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 22:05:44,325 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
+2022-02-12 22:05:44,325 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions WHERE userid = (SELECT userid FROM users WHERE email = "zstanfill@regis.edu");
+2022-02-12 22:05:44,325 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 22:05:44,708 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 22:05:44,734 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SQL Statements Commited
+2022-02-12 22:05:44,735 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User Session Delete Verified
+2022-02-12 22:05:44,736 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 22:05:44,737 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - closeUserSession -- User Session Closed
+2022-02-12 22:18:35,943 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 22:18:35,947 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 22:22:16,603 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 22:27:12,888 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 22:27:12,892 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 22:27:23,536 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from config\log4j2.properties
+2022-02-12 22:27:23,541 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-12 22:27:48,684 [main] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - UserManager Default Constructor Called
+2022-02-12 22:27:48,708 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey Called
+2022-02-12 22:27:48,735 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 22:27:48,737 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 22:27:48,737 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 22:27:48,737 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 22:27:48,738 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 22:27:48,738 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUserSessionKey -- Retrieving SessionKey
+2022-02-12 22:27:48,738 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey Called
+2022-02-12 22:27:48,739 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-12 22:27:48,739 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-12 22:27:49,123 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 22:27:49,147 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 22:27:49,148 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-12 22:27:49,148 [Thread-0] TRACE com.foodmenuauthsvr.model.services.authenticationservices.UserServer - SessionKey Valid for zstanfill@regis.edu
+
+2022-02-12 22:27:49,149 [Thread-0] TRACE com.foodmenuauthsvr.model.business.managers.UserManager - retrieveUser Called
+2022-02-12 22:27:49,151 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - UserSvcImpl Default Constructor Called
+2022-02-12 22:27:49,152 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-12 22:27:49,153 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-12 22:27:49,153 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-12 22:27:49,153 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Successfully read database connection properties from properties files
+2022-02-12 22:27:49,154 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserData Called
+2022-02-12 22:27:49,154 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserData -- SQL Statements:
+2022-02-12 22:27:49,154 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT userid, firstname, lastname, email, recoveryphrase, age, rolename, infotext FROM ((users INNER JOIN info ON users.infoid = info.infoid) INNER JOIN roles ON users.role = roles.roleid) WHERE email = "zstanfill@regis.edu";
+2022-02-12 22:27:49,173 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Opened
+2022-02-12 22:27:49,177 [Thread-0] TRACE com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection Closed
+2022-02-12 22:27:49,178 [Thread-0] TRACE com.foodmenu.model.domain.User - User Overloaded Constructor (with Password) Called
+2022-02-12 22:27:49,178 [Thread-0] DEBUG com.foodmenu.model.domain.User - User Object Instantiated -- FirstName:zach   LastName:stanfill   Email:zstanfill@regis.edu   RecoveryPhrase:ghostbuster   Age:29   Role:admin
+2022-02-12 22:27:49,178 [Thread-0] TRACE com.foodmenu.model.domain.User - getEmailAddress Method Called
+2022-02-12 22:27:49,178 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
