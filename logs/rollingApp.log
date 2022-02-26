@@ -2679,3 +2679,554 @@ Caused by: java.lang.ClassNotFoundException: com.myapplication.model.services.pa
 2022-02-26 12:04:06,133 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
 2022-02-26 12:04:06,133 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions WHERE userid = (SELECT userid FROM users WHERE email = "zstanfill@regis.edu");
 2022-02-26 12:04:06,133 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:31:47,952 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63eef88a
+2022-02-26 12:31:48,116 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:31:48,184 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:31:48,241 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:31:48,243 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:31:48,246 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:31:48,248 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:31:48,265 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from G:\My Drive\Stanfill_Files\Other_Documents\Zach\Regis University\Graduate\Classes\Programming\my_json_application\config\log4j2.properties
+2022-02-26 12:31:48,266 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-26 12:31:48,266 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f2613d1
+2022-02-26 12:31:48,289 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:31:48,290 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:31:48,291 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:31:48,292 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:31:48,292 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:31:48,293 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:32:15,589 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7adf16aa
+2022-02-26 12:32:15,608 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:32:15,609 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:32:15,610 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:32:15,610 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:32:15,611 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:32:15,612 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:32:15,672 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@433d7764
+2022-02-26 12:32:15,690 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:32:15,691 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:32:15,692 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:32:15,692 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:32:15,693 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:32:15,694 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:32:15,722 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:32:15,722 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:32:15,722 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:32:15,722 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSaltData -- SQL Statements:
+2022-02-26 12:32:15,723 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT salttext FROM users INNER JOIN salt ON users.saltid = salt.saltid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:32:16,125 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SaltData zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:32:16,177 [Thread-0] DEBUG com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- hashed password successfully
+2022-02-26 12:32:16,177 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Statements:
+2022-02-26 12:32:16,177 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT infotext FROM users INNER JOIN info ON users.infoid = info.infoid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:32:16,199 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Session Inject Statements:
+2022-02-26 12:32:16,199 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - INSERT INTO sessions (userid, sessionkey) VALUES ((SELECT userid FROM users WHERE email = "zstanfill@regis.edu"), "eDn8mW0SuK2BHLoeC2KVS8NSrQkmkpYvd4YgqOhhU6LtjjpHf6niIjcvsKhvnA2kFNrZgTtLGIiKbwwsniEp0F1j27ZnLq8v7DP8YhOsp6Hg5xAtev8QT6StebbvtmMsjhGNyT5Z6iMvXpq6aaXmJ4iWcZGZpiL2L25lcMaBtmHePY8xNGqEAJc8OCSp8xSjaML3CnUZp3LWvlh7cWwERRPCCDvObR8TQ6EuhYqGWyt7RLcyxNbxvx5eRkuJzbZ2");
+2022-02-26 12:32:16,209 [Thread-0] INFO  com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- Authentication Succeded
+2022-02-26 12:32:16,210 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4c75c643
+2022-02-26 12:32:16,225 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:32:16,226 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:32:16,226 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:32:16,227 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:32:16,228 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:32:16,228 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:32:16,230 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:32:16,230 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:32:16,230 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:32:16,231 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:32:16,231 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:32:16,248 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:32:18,408 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20d4dbc2
+2022-02-26 12:32:18,428 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:32:18,429 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:32:18,430 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:32:18,430 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:32:18,431 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:32:18,432 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:32:18,434 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:32:18,435 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:32:18,435 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:32:18,435 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:32:18,436 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:32:18,458 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:32:18,458 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46ec33d7
+2022-02-26 12:32:18,472 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:32:18,473 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:32:18,474 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:32:18,474 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:32:18,475 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:32:18,475 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:32:18,477 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:32:18,478 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:32:18,478 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:32:18,478 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserData -- SQL Statements:
+2022-02-26 12:32:18,478 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT userid, firstname, lastname, email, recoveryphrase, age, rolename, infotext FROM ((users INNER JOIN info ON users.infoid = info.infoid) INNER JOIN roles ON users.role = roles.roleid) WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:32:18,495 [Thread-1] DEBUG com.foodmenu.model.domain.User - User Object Instantiated -- FirstName:zach   LastName:stanfill   Email:zstanfill@regis.edu   RecoveryPhrase:ghostbuster   Age:29   Role:admin
+2022-02-26 12:32:18,495 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:33:30,862 [Thread-2] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5c9ca1ae
+2022-02-26 12:33:30,876 [Thread-2] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:33:30,877 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:33:30,877 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:33:30,878 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:33:30,879 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:33:30,879 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:33:30,882 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:33:30,883 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:33:30,883 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:33:30,883 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSaltData -- SQL Statements:
+2022-02-26 12:33:30,883 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT salttext FROM users INNER JOIN salt ON users.saltid = salt.saltid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:33:30,899 [Thread-2] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SaltData zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:33:30,909 [Thread-2] DEBUG com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- hashed password successfully
+2022-02-26 12:33:30,909 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Statements:
+2022-02-26 12:33:30,910 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT infotext FROM users INNER JOIN info ON users.infoid = info.infoid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:33:30,925 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Session Inject Statements:
+2022-02-26 12:33:30,925 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - INSERT INTO sessions (userid, sessionkey) VALUES ((SELECT userid FROM users WHERE email = "zstanfill@regis.edu"), "J2CXsuSSkuU6IbBlDlQvs0Ky3mpCERgu6Rm5nOjpsuxZWhRFMAp0bGCxJnwdrdhx3WEHDGtt8XXLIRsg04aYuyhbtdqP7hgagB8paOQLG6rJfLA45ndSApi1oDNIwgzmsbQc3iahXpBzuygVppvxSjDCMsScl8QQyFMWJFHxIypN1eDGBprrhkpNzlL1uhpDg8kfkac6ulC04osp0T5kfmolQLecVCfEVnJgoRO8Rfmk4n8um7fQtnszssbheJ3R");
+2022-02-26 12:33:30,936 [Thread-2] INFO  com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- Authentication Succeded
+2022-02-26 12:33:30,936 [Thread-2] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@487e36ec
+2022-02-26 12:33:30,949 [Thread-2] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:33:30,950 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:33:30,951 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:33:30,951 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:33:30,952 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:33:30,952 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:33:30,954 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:33:30,955 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:33:30,955 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:33:30,956 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:33:30,956 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:33:30,971 [Thread-2] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:33:33,176 [Thread-3] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29fd5127
+2022-02-26 12:33:33,189 [Thread-3] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:33:33,190 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:33:33,191 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:33:33,191 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:33:33,192 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:33:33,193 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:33:33,195 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:33:33,195 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:33:33,196 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:33:33,196 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:33:33,196 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:33:33,213 [Thread-3] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:33:33,214 [Thread-3] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@75436226
+2022-02-26 12:33:33,227 [Thread-3] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:33:33,228 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:33:33,229 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:33:33,229 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:33:33,230 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:33:33,230 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:33:33,232 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:33:33,233 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:33:33,233 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:33:33,233 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserData -- SQL Statements:
+2022-02-26 12:33:33,233 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT userid, firstname, lastname, email, recoveryphrase, age, rolename, infotext FROM ((users INNER JOIN info ON users.infoid = info.infoid) INNER JOIN roles ON users.role = roles.roleid) WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:33:33,249 [Thread-3] DEBUG com.foodmenu.model.domain.User - User Object Instantiated -- FirstName:zach   LastName:stanfill   Email:zstanfill@regis.edu   RecoveryPhrase:ghostbuster   Age:29   Role:admin
+2022-02-26 12:33:33,249 [Thread-3] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:34:00,833 [Thread-4] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4df0ffb9
+2022-02-26 12:34:00,852 [Thread-4] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:34:00,853 [Thread-4] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:34:00,853 [Thread-4] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:34:00,855 [Thread-4] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:34:00,856 [Thread-4] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:34:00,857 [Thread-4] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:34:00,860 [Thread-4] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:34:00,860 [Thread-4] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:34:00,861 [Thread-4] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:34:00,861 [Thread-4] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
+2022-02-26 12:34:00,861 [Thread-4] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions WHERE userid = (SELECT userid FROM users WHERE email = "zstanfill@regis.edu");
+2022-02-26 12:34:00,862 [Thread-4] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:36:06,573 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63eef88a
+2022-02-26 12:36:06,738 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:36:06,794 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:36:06,851 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:36:06,853 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:36:06,856 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:36:06,859 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:36:06,875 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from G:\My Drive\Stanfill_Files\Other_Documents\Zach\Regis University\Graduate\Classes\Programming\my_json_application\config\log4j2.properties
+2022-02-26 12:36:06,876 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-26 12:36:06,877 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f2613d1
+2022-02-26 12:36:06,899 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:36:06,900 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:36:06,901 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:36:06,901 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:36:06,902 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:36:06,902 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:36:21,372 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7adf16aa
+2022-02-26 12:36:21,390 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:36:21,391 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:36:21,392 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:36:21,392 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:36:21,393 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:36:21,393 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:36:21,450 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@582a4e91
+2022-02-26 12:36:21,467 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:36:21,467 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:36:21,468 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:36:21,469 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:36:21,470 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:36:21,470 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:36:21,493 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:36:21,493 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:36:21,493 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:36:21,494 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSaltData -- SQL Statements:
+2022-02-26 12:36:21,494 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT salttext FROM users INNER JOIN salt ON users.saltid = salt.saltid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:36:21,888 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SaltData zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:36:21,938 [Thread-0] DEBUG com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- hashed password successfully
+2022-02-26 12:36:21,938 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Statements:
+2022-02-26 12:36:21,938 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT infotext FROM users INNER JOIN info ON users.infoid = info.infoid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:36:41,211 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4d22e074
+2022-02-26 12:36:41,231 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:36:41,232 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:36:41,233 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:36:41,234 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:36:41,234 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:36:41,235 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:36:41,239 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:36:41,239 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:36:41,239 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:36:41,240 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSaltData -- SQL Statements:
+2022-02-26 12:36:41,240 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT salttext FROM users INNER JOIN salt ON users.saltid = salt.saltid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:36:41,257 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SaltData zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:36:41,272 [Thread-1] DEBUG com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- hashed password successfully
+2022-02-26 12:36:41,272 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Statements:
+2022-02-26 12:36:41,273 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT infotext FROM users INNER JOIN info ON users.infoid = info.infoid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:36:41,292 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Session Inject Statements:
+2022-02-26 12:36:41,292 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - INSERT INTO sessions (userid, sessionkey) VALUES ((SELECT userid FROM users WHERE email = "zstanfill@regis.edu"), "7vVT1kgAdJMBDx8dZcKo3ezSJg7IL7KL0IWqeBnbmod63Xrnd1BNXJoxWTJyhNRBB2P5IqM8R1FQEKxw2wky021YeE5jDVwHCuGnL0638VbTuIY1s2xD7LZtGlMaUMWifdH2FtxplssldKn2IL6aOMA6nFjFRC8om7LtbDrCWUEpM1A7YheXqLtrCeb4rcQCppyW4ibjNMF52KUJYtyHY5ah4utIq0Fvbw21dSyPgc518U38JdhAyMNilyRjHMxX");
+2022-02-26 12:36:41,302 [Thread-1] INFO  com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- Authentication Succeded
+2022-02-26 12:36:41,302 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@252c5599
+2022-02-26 12:36:41,317 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:36:41,318 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:36:41,318 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:36:41,319 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:36:41,319 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:36:41,320 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:36:41,322 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:36:41,322 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:36:41,323 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:36:41,323 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:36:41,323 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:36:41,339 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:36:42,884 [Thread-2] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@797f4af5
+2022-02-26 12:36:42,898 [Thread-2] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:36:42,899 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:36:42,900 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:36:42,900 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:36:42,901 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:36:42,902 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:36:42,904 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:36:42,904 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:36:42,904 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:36:42,905 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:36:42,905 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:36:42,926 [Thread-2] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:36:42,926 [Thread-2] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5dc93e7
+2022-02-26 12:36:42,940 [Thread-2] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:36:42,941 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:36:42,941 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:36:42,942 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:36:42,942 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:36:42,943 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:36:42,944 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:36:42,945 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:36:42,945 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:36:42,945 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserData -- SQL Statements:
+2022-02-26 12:36:42,946 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT userid, firstname, lastname, email, recoveryphrase, age, rolename, infotext FROM ((users INNER JOIN info ON users.infoid = info.infoid) INNER JOIN roles ON users.role = roles.roleid) WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:36:42,962 [Thread-2] DEBUG com.foodmenu.model.domain.User - User Object Instantiated -- FirstName:zach   LastName:stanfill   Email:zstanfill@regis.edu   RecoveryPhrase:ghostbuster   Age:29   Role:admin
+2022-02-26 12:36:42,962 [Thread-2] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:36:57,309 [Thread-3] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@30209952
+2022-02-26 12:36:57,330 [Thread-3] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:36:57,332 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:36:57,333 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:36:57,333 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:36:57,335 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:36:57,336 [Thread-3] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:36:57,340 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:36:57,340 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:36:57,341 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:36:57,341 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
+2022-02-26 12:36:57,342 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions WHERE userid = (SELECT userid FROM users WHERE email = "zstanfill@regis.edu");
+2022-02-26 12:36:57,342 [Thread-3] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:40:22,161 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63eef88a
+2022-02-26 12:40:22,344 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:22,410 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:22,470 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:22,473 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:22,476 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:22,479 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:22,482 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:22,501 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from G:\My Drive\Stanfill_Files\Other_Documents\Zach\Regis University\Graduate\Classes\Programming\my_json_application\config\log4j2.properties
+2022-02-26 12:40:22,503 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-26 12:40:22,503 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@878452d
+2022-02-26 12:40:22,528 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:22,529 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:22,531 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:22,531 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:22,532 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:22,533 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:22,534 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:40,206 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@71ae31b0
+2022-02-26 12:40:40,226 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:40,227 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:40,227 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:40,228 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:40,228 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:40,229 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:40,230 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:40,288 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@abb6ec2
+2022-02-26 12:40:40,304 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:40,305 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:40,305 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:40,306 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:40,306 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:40,307 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:40,308 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:40,328 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7d718e17
+2022-02-26 12:40:40,343 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:40,344 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:40,345 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:40,345 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:40,346 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:40,347 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:40,347 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:40,348 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:40:40,348 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:40:40,349 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:40:40,349 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSaltData -- SQL Statements:
+2022-02-26 12:40:40,349 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT salttext FROM users INNER JOIN salt ON users.saltid = salt.saltid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:40:40,779 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SaltData zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:40:40,833 [Thread-0] DEBUG com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- hashed password successfully
+2022-02-26 12:40:40,833 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Statements:
+2022-02-26 12:40:40,834 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT infotext FROM users INNER JOIN info ON users.infoid = info.infoid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:40:40,858 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Session Inject Statements:
+2022-02-26 12:40:40,858 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - INSERT INTO sessions (userid, sessionkey) VALUES ((SELECT userid FROM users WHERE email = "zstanfill@regis.edu"), "FZoUfpdQEJQeyoY4qD7kVWttoKPpCGD5f3VjKNefL8wJlofqqIsEVUbBFbCYJqMsu0dzlSrFI3kvJnPsVwccChQGklg4ZirmbvpTNAILAnJWUtIYNSE1hsZlgjWonLR1bmzYrNRWrJhnQHNgFelcvS6iDkRCrxZWeYNHRLlciAPJDG7yV50TeVIhcvNgpZ5GFmNyYDnBZ7iAU24zKhj0pmJvXfiUifAzvUCneq8s8ZwDOd3cqBQ6yhkZtubRDGu1");
+2022-02-26 12:40:40,868 [Thread-0] INFO  com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- Authentication Succeded
+2022-02-26 12:40:40,868 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@75e2d2a6
+2022-02-26 12:40:40,882 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:40,883 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:40,884 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:40,885 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:40,885 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:40,886 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:40,886 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:40,887 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@71a2ac0
+2022-02-26 12:40:40,902 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:40,903 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:40,903 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:40,904 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:40,904 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:40,910 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:40,910 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:40,911 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:40:40,911 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:40:40,911 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:40:40,912 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:40:40,912 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:40:40,927 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:40:42,880 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5c9ca1ae
+2022-02-26 12:40:42,893 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:42,894 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:42,895 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:42,896 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:42,896 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:42,897 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:42,897 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:42,898 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5bc04ef
+2022-02-26 12:40:42,910 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:42,911 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:42,912 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:42,912 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:42,913 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:42,913 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:42,914 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:42,914 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:40:42,915 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:40:42,915 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:40:42,915 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:40:42,915 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:40:42,937 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:40:42,938 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@54d9668d
+2022-02-26 12:40:42,950 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:42,951 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:42,952 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:42,952 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:42,953 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:42,954 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:42,954 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:42,955 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@192b3e70
+2022-02-26 12:40:42,968 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:40:42,969 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:40:42,969 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:40:42,970 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:40:42,970 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:40:42,971 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:40:42,971 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:40:42,972 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:40:42,972 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:40:42,972 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:40:42,973 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserData -- SQL Statements:
+2022-02-26 12:40:42,973 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT userid, firstname, lastname, email, recoveryphrase, age, rolename, infotext FROM ((users INNER JOIN info ON users.infoid = info.infoid) INNER JOIN roles ON users.role = roles.roleid) WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:40:42,990 [Thread-1] DEBUG com.foodmenu.model.domain.User - User Object Instantiated -- FirstName:zach   LastName:stanfill   Email:zstanfill@regis.edu   RecoveryPhrase:ghostbuster   Age:29   Role:admin
+2022-02-26 12:40:42,991 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:41:00,353 [Thread-2] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@469be7f
+2022-02-26 12:41:00,382 [Thread-2] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:41:00,383 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:41:00,384 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:41:00,385 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:41:00,386 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:41:00,387 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:41:00,388 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:41:00,388 [Thread-2] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3f71227d
+2022-02-26 12:41:00,405 [Thread-2] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:41:00,406 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:41:00,406 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:41:00,407 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:41:00,407 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:41:00,408 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:41:00,409 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:41:00,409 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:41:00,410 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:41:00,410 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:41:00,410 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
+2022-02-26 12:41:00,410 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions WHERE userid = (SELECT userid FROM users WHERE email = "zstanfill@regis.edu");
+2022-02-26 12:41:00,410 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:41:38,089 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63eef88a
+2022-02-26 12:41:38,254 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:41:38,312 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:41:38,371 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:41:38,374 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:41:38,377 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:41:38,379 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:41:38,382 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:41:38,398 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from G:\My Drive\Stanfill_Files\Other_Documents\Zach\Regis University\Graduate\Classes\Programming\my_json_application\config\log4j2.properties
+2022-02-26 12:41:38,399 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-26 12:41:38,400 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@878452d
+2022-02-26 12:41:38,422 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:41:38,423 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:41:38,424 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:41:38,424 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:41:38,425 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:41:38,426 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:41:38,426 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:21,828 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@71ae31b0
+2022-02-26 12:42:21,850 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:21,851 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:21,852 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:21,852 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:21,853 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:21,854 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:21,854 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:21,910 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@abb6ec2
+2022-02-26 12:42:21,927 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:21,928 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:21,928 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:21,929 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:21,929 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:21,930 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:21,930 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:21,951 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7d718e17
+2022-02-26 12:42:21,966 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:21,967 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:21,967 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:21,968 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:21,969 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:21,969 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:21,970 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:21,970 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:42:21,971 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:42:21,971 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:42:21,971 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSaltData -- SQL Statements:
+2022-02-26 12:42:21,971 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT salttext FROM users INNER JOIN salt ON users.saltid = salt.saltid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:42:22,385 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SaltData zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:42:22,433 [Thread-0] DEBUG com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- hashed password successfully
+2022-02-26 12:42:22,433 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Statements:
+2022-02-26 12:42:22,433 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT infotext FROM users INNER JOIN info ON users.infoid = info.infoid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:42:22,456 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - authenticateUserData -- SQL Session Inject Statements:
+2022-02-26 12:42:22,457 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - INSERT INTO sessions (userid, sessionkey) VALUES ((SELECT userid FROM users WHERE email = "zstanfill@regis.edu"), "HMeoaeVthxIjS6kKJ7EZAr6POR6AfJMnicaBEZt5fm1kuqtoSuxLN46KmXfpwdKRTB0yuFb5PUUV3UQRXoSilOBJaHpzxDZzOWqR3ID8YAp7Kohfe0Ws65nlt4eba7ejbTaozKdjQHnDn4ABrfXnzaHWB7zIXVAFSDmLz7NpGcGKqJ6QIac2TL675Yy0BmZQmcyPnb1xunhmhsTIu0OcYBdpnbi7lQYYS1kxjGzt0GdWdgXzcPS3fuKO5bbfktcc");
+2022-02-26 12:42:22,466 [Thread-0] INFO  com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- Authentication Succeded
+2022-02-26 12:42:22,466 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@75e2d2a6
+2022-02-26 12:42:22,481 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:22,482 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:22,483 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:22,483 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:22,484 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:22,484 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:22,485 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:22,485 [Thread-0] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@71a2ac0
+2022-02-26 12:42:22,500 [Thread-0] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:22,501 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:22,507 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:22,508 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:22,508 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:22,509 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:22,509 [Thread-0] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:22,510 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:42:22,510 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:42:22,511 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:42:22,511 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:42:22,511 [Thread-0] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:42:22,526 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:42:23,959 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5c9ca1ae
+2022-02-26 12:42:23,972 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:23,973 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:23,974 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:23,974 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:23,975 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:23,976 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:23,976 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:23,977 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5bc04ef
+2022-02-26 12:42:23,990 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:23,990 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:23,991 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:23,992 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:23,992 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:23,993 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:23,993 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:23,994 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:42:23,994 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:42:23,995 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:42:23,995 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserSessionKey -- SQL Statements:
+2022-02-26 12:42:23,995 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionkey FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:42:24,011 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:42:24,011 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@54d9668d
+2022-02-26 12:42:24,025 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:24,026 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:24,026 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:24,027 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:24,027 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:24,028 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:24,028 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:24,029 [Thread-1] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@192b3e70
+2022-02-26 12:42:24,042 [Thread-1] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:24,043 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:24,044 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:24,044 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:24,045 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:24,045 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:24,046 [Thread-1] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:24,046 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:42:24,046 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:42:24,046 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:42:24,047 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - retrieveUserData -- SQL Statements:
+2022-02-26 12:42:24,047 [Thread-1] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT userid, firstname, lastname, email, recoveryphrase, age, rolename, infotext FROM ((users INNER JOIN info ON users.infoid = info.infoid) INNER JOIN roles ON users.role = roles.roleid) WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:42:24,064 [Thread-1] DEBUG com.foodmenu.model.domain.User - User Object Instantiated -- FirstName:zach   LastName:stanfill   Email:zstanfill@regis.edu   RecoveryPhrase:ghostbuster   Age:29   Role:admin
+2022-02-26 12:42:24,064 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:42:37,697 [Thread-2] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29fd5127
+2022-02-26 12:42:37,727 [Thread-2] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:37,728 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:37,729 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:37,730 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:37,730 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:37,731 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:37,731 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:37,732 [Thread-2] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@509dfd92
+2022-02-26 12:42:37,749 [Thread-2] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:42:37,750 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:42:37,750 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:42:37,751 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:42:37,751 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:42:37,752 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:42:37,753 [Thread-2] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:42:37,753 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Connection String = jdbc:mysql://localhost/foodmenu
+2022-02-26 12:42:37,754 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Username = dbuser
+2022-02-26 12:42:37,754 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - Database Password = password
+2022-02-26 12:42:37,754 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
+2022-02-26 12:42:37,754 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions WHERE userid = (SELECT userid FROM users WHERE email = "zstanfill@regis.edu");
+2022-02-26 12:42:37,755 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
