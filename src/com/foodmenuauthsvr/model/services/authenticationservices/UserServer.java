@@ -12,35 +12,47 @@ import java.net.Socket;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.foodmenu.model.domain.User;
 import com.foodmenu.model.domain.UserWrapper;
+import com.foodmenuauthsvr.model.services.logservice.LogServer;
+import com.foodmenuauthsvr.model.services.networkservice.NetworkClient;
+import com.foodmenuauthsvr.model.services.passwordservice.AdminAccountService;
 import com.foodmenuauthsvr.model.business.exceptions.ServiceLoadException;
 import com.foodmenuauthsvr.model.business.exceptions.UserPrivilegesException;
 import com.foodmenuauthsvr.model.business.managers.UserManager;
 import com.foodmenuauthsvr.model.services.exceptions.UserServiceException;
 
+/** 
+ * @author Zach Stanfill
+ * Modeled from GeeksForGeeks.org/multithreaded-servers-in-java 
+ */
 public class UserServer {
 	
 	static Logger LOGGER = Logger.getLogger(UserServer.class);
-	
-	private static String propertiesFile = System.getProperty("user.dir") + "\\config\\application.properties";
+	private static LogServer logServer;
+	private static AdminAccountService adminAccount;
 	
 	static {
-		try (InputStream input = new FileInputStream(propertiesFile)) {
-            Properties prop = new Properties();
-            prop.load(input);
-            if(new File(prop.getProperty("log4j2.properties")).exists()) {
-            	System.setProperty("log4j.configurationFile", prop.getProperty("log4j2.properties"));
-            	LOGGER.info("Loaded Log4J Properties from " + prop.getProperty("log4j2.properties"));
-            } else {
-            	System.setProperty("log4j.configurationFile", "config\\log4j2.properties");
-            	LOGGER.error("System failed to load log4j2.properties file. Check configuration for more details");
-            }
-		} catch (Exception e) {
-			System.setProperty("log4j.configurationFile", "config\\log4j2.properties");
-			LOGGER.error("System failed to load log4j2.properties file. Check configuration for more details");
-		}	
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		adminAccount = (AdminAccountService)context.getBean("adminAccount");
+		
+		logServer = (LogServer)context.getBean("logCfg");
+		String log4j2PropFile = logServer.getPropFile("log");
+		
+		
+        if(!log4j2PropFile.equals("")) {
+         	System.setProperty("log4j.configurationFile", log4j2PropFile);
+          	LOGGER.info("Loaded Log4J Properties from " + log4j2PropFile);
+        } else {
+         	System.setProperty("log4j.configurationFile", "config\\log4j2.properties");
+         	LOGGER.error("System failed to load log4j2.properties file. Check configuration for more details");
+        }
+		
+		LOGGER.trace(String.format("Logging Level: %s", LOGGER.getLevel()));	
 	}
 
     public static void main(String[] args) {
@@ -49,9 +61,13 @@ public class UserServer {
     	ServerSocket server = null;
   
         try {
+        	
+        	ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+    		NetworkClient authSvrNetClient = (NetworkClient)context.getBean("authSvrNetCfg");
+    		int serverPort = Integer.parseInt(authSvrNetClient.getPort("port"));
   
             // server is listening on port 1234
-            server = new ServerSocket(40008);
+            server = new ServerSocket(serverPort);
             server.setReuseAddress(true);
   
             // running infinite loop for getting client request
@@ -117,7 +133,7 @@ public class UserServer {
                 	
                 	switch (userWrapper.getRequestType()) {
                 		case 1:
-							if(!userWrapper.getMiscString().equals("Secret_Code")) {
+							if(!userWrapper.getMiscString().equals(adminAccount.getPasscode())) {
 								userWrapper.getUser().setRole("user");
 							}
 	                		response = new UserWrapper(10, userManager.addNewUser(userWrapper.getUser()));

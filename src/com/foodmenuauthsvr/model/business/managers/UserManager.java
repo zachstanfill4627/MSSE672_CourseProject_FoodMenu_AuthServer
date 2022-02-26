@@ -15,11 +15,16 @@ import javax.crypto.spec.PBEKeySpec;
 
 import org.apache.commons.codec.binary.Hex;
 import org.apache.log4j.Logger;
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.foodmenuauthsvr.model.business.exceptions.*;
 import com.foodmenuauthsvr.model.business.factory.ServiceFactory;
 import com.foodmenu.model.domain.User;
 import com.foodmenuauthsvr.model.services.exceptions.UserServiceException;
+import com.foodmenuauthsvr.model.services.logservice.LogServer;
+import com.foodmenuauthsvr.model.services.passwordservice.PasswordPolicyService;
 import com.foodmenuauthsvr.model.services.userservice.IUserService;
 
 /**
@@ -31,6 +36,9 @@ public class UserManager {
 	private static Logger  LOGGER = Logger.getLogger(UserManager.class);
 	
 	private static String propertiesFile = "config/application.properties";
+	private static ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+	
+	private static PasswordPolicyService passwordPolicy;
 	
 	private User user;
 	
@@ -41,6 +49,14 @@ public class UserManager {
 	private static int minCharClass = 0;
 	private static int iterations = 10000;
 	private static int keyLength = 512;
+	
+	static {
+		try {
+			passwordPolicy = (PasswordPolicyService)context.getBean("passwordPolicy");
+		} catch (BeansException e) {
+			LOGGER.error(e);
+		}
+	}
 	
 	public UserManager() {
 		LOGGER.trace("UserManager Default Constructor Called");
@@ -318,45 +334,35 @@ public class UserManager {
      */
 	private static void readProperties() throws IOException {
 		LOGGER.trace("readProperties Called");
-		
-		/** Read Configured Properties */
-		try (InputStream input = new FileInputStream(propertiesFile)) {
-            Properties prop = new Properties();
-            prop.load(input);
-            LOGGER.trace("readProperties -- Properties read successfully");
-                        
-            if(prop.getProperty("password.minLength") != null) {
-            	minLength = Integer.parseInt(prop.getProperty("password.minLength"));
-            }
-            if(prop.getProperty("password.maxLength") != null) {
-            	maxLength = Integer.parseInt(prop.getProperty("password.maxLength"));
-            }
-            if(prop.getProperty("password.charClasses") != null) {
-            	charClasses = Integer.parseInt(prop.getProperty("password.charClasses"));
-            }
-            if(prop.getProperty("password.minCharClass") != null) {
-            	minCharClass = Integer.parseInt(prop.getProperty("password.minCharClass"));
-            }
+
+		try {
+		/** Read Configured Properties */                      
+           	minLength = passwordPolicy.getMinLength();
+           	maxLength = passwordPolicy.getMaxLength();
+            charClasses = passwordPolicy.getCharClasses();
+            minCharClass = passwordPolicy.getMinCharClass();
+            iterations = passwordPolicy.getIterations();
+            keyLength = passwordPolicy.getKeyLength();
 
             /** Validate Password Parameters */
             if(minLength < 0 || minLength > maxLength) {
-            	System.err.println("Invalid password.minLength ; Setting Value to 8.");
+            	LOGGER.error("Invalid password.minLength ; Setting Value to 8.");
             	minLength = 8;
             }
             if((maxLength > 50)) {
-            	System.err.println("Invalid password.maxLength ; Setting Value to 24.");
+            	LOGGER.error("Invalid password.maxLength ; Setting Value to 24.");
             	maxLength = 24;
             }
             if(!(charClasses >= 1 && charClasses <= 4)) {
-            	System.err.println("Invalid password.charClasses ; Setting Value to 4.");
+            	LOGGER.error("Invalid password.charClasses ; Setting Value to 4.");
             	charClasses = 4;	
             }
             if((charClasses*minCharClass) > maxLength) {
-        		System.err.println("Invalid password.minCharClass ; Setting Value to 0");
+        		LOGGER.error("Invalid password.minCharClass ; Setting Value to 0");
         		minCharClass = 0;	
         	}
             
-            LOGGER.info(String.format("Password Policy set from properties file: "
+            LOGGER.info(String.format("Password Policy set from applicationContext.xml file: "
             		+ "MinLength:%d   MaxLength:%s   charClasses:%d   minCharClass:%d",
             		minLength, maxLength, charClasses, minCharClass));
 			
@@ -367,15 +373,12 @@ public class UserManager {
 			minCharClass = 0;
 			iterations = 10000;
 			keyLength = 512;
-			LOGGER.warn(String.format("Error setting password policy from properties file."
+			LOGGER.warn(String.format("Error setting password policy from applicationContext.xml file."
 					+ "Default password policy implemented: "
             		+ "MinLength:%d   MaxLength:%s   charClasses:%d   minCharClass:%d",
             		minLength, maxLength, charClasses, minCharClass));
 			System.err.println("Error in reading property file password values, setting to default values!");
 		}
-		
-		
-		
 	}
 	
 	/**
