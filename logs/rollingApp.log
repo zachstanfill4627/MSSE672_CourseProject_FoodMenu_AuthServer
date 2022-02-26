@@ -3230,3 +3230,28 @@ Caused by: java.lang.ClassNotFoundException: com.myapplication.model.services.pa
 2022-02-26 12:42:37,754 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - closeUserSession -- SQL Statements:
 2022-02-26 12:42:37,754 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - DELETE FROM sessions WHERE userid = (SELECT userid FROM users WHERE email = "zstanfill@regis.edu");
 2022-02-26 12:42:37,755 [Thread-2] DEBUG com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - SELECT sessionid FROM sessions INNER JOIN users ON users.userid = sessions.userid WHERE email = "zstanfill@regis.edu";
+2022-02-26 12:50:58,950 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@63eef88a
+2022-02-26 12:50:59,118 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:50:59,187 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:50:59,245 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:50:59,247 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:50:59,250 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:50:59,253 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:50:59,255 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:50:59,272 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from G:\My Drive\Stanfill_Files\Other_Documents\Zach\Regis University\Graduate\Classes\Programming\my_json_application\config\log4j2.properties
+2022-02-26 12:50:59,273 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-26 12:50:59,273 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@878452d
+2022-02-26 12:50:59,295 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from class path resource [applicationContext.xml]
+2022-02-26 12:50:59,296 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'logCfg'
+2022-02-26 12:50:59,297 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'implReferences'
+2022-02-26 12:50:59,298 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jdbcCfg'
+2022-02-26 12:50:59,298 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'passwordPolicy'
+2022-02-26 12:50:59,299 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'adminAccount'
+2022-02-26 12:50:59,300 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'authSvrNetCfg'
+2022-02-26 12:51:42,152 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Loaded Log4J Properties from G:\My Drive\Stanfill_Files\Other_Documents\Zach\Regis University\Graduate\Classes\Programming\my_json_application\config\log4j2.properties
+2022-02-26 12:51:42,158 [main] INFO  com.foodmenuauthsvr.model.services.authenticationservices.UserServer - Starting Application
+2022-02-26 12:52:16,609 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SaltData zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:52:16,702 [Thread-0] INFO  com.foodmenuauthsvr.model.business.managers.UserManager - authenticateUser -- Authentication Succeded
+2022-02-26 12:52:16,756 [Thread-0] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:52:18,324 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User SessionKey zstanfill@regis.edu successfully retrieved from database
+2022-02-26 12:52:18,373 [Thread-1] INFO  com.foodmenuauthsvr.model.services.userservice.UserSvcImpl - User zstanfill@regis.edu successfully retrieved from database
