@@ -2,6 +2,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<!-- LogCfg, JdbcCfg, and AuthSvrNetCfg modeled from Prof. Ishmael, MSSE672, Regis University -->
  
     <bean id="logCfg" class="com.foodmenuauthsvr.model.services.logservice.LogServer">
 		<property name="propFileLocation" value="G:\My Drive\Stanfill_Files\Other_Documents\Zach\Regis University\Graduate\Classes\Programming\my_json_application\config\log4j2.properties"/>
